@@ -143,7 +143,7 @@ plot_bracket <- function(plot_names_df, matchup_results){
     annotate('text', label = paste0(plot_names_df$team_name[plot_names_df$round == 3 & plot_names_df$bracket_id == 2],': ',m_3.2_pcts[1]), x=7, y=13.25, size=5) +
     annotate('text', label = paste0(plot_names_df$team_name[plot_names_df$round == 3 & plot_names_df$bracket_id == 3],': ',m_3.2_pcts[2]), x=7, y=9.25, size=5) +
     annotate('text', label = paste0(plot_names_df$team_name[plot_names_df$round == 4 & plot_names_df$bracket_id == 1],': ',m_4.1_pcts[1]), x=9, y=3.75, size=5) +
-    annotate('text', label = paste0(plot_names_df$team_name[plot_names_df$round == 4 & plot_names_df$bracket_id == 2],': ',m_4.1_pcts[1]), x=9, y=11.25, size=5) +
+    annotate('text', label = paste0(plot_names_df$team_name[plot_names_df$round == 4 & plot_names_df$bracket_id == 2],': ',m_4.1_pcts[2]), x=9, y=11.25, size=5) +
     annotate('text', label=plot_names_df$team_name[plot_names_df$round == 5], x=8.5, y=7.5, size=4) +
     annotate('text', label='Champion', x=8.5, y=6.5, size=4) +
     # labels for each match

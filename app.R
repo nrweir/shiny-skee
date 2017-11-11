@@ -1,3 +1,5 @@
+#setwd('~/Dropbox/code/skeeball')
+
 library(shiny)
 library(ggplot2)
 library(dplyr)
@@ -9,6 +11,11 @@ sim_results <- readRDS('data/sim_results.rds')
 team_means <- readRDS('data/team_means.rds')
 reactive_plot_names <- plot_names_df
 
+# source('shiny_skee/helpers.R')
+# matchup_results <- readRDS('shiny_skee/data/matchup_results.rds')
+# plot_names_df <- readRDS('shiny_skee/data/plot_names_df.rds')
+# sim_results <- readRDS('shiny_skee/data/sim_results.rds')
+# team_means <- readRDS('shiny_skee/data/team_means.rds')
 
 # Define UI ----
 ui <- fluidPage(
@@ -119,7 +126,7 @@ ui <- fluidPage(
     ),
   column(10, 
          h3('Skeeson 19 Playoff Bracket'),
-         plotOutput('bracket', height='800px')
+         plotOutput('bracket', height='1000px')
   )),
   fluidRow(
     column(4),
