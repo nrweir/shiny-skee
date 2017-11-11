@@ -176,6 +176,7 @@ plot_outcomes <- function(sim_results, team_number){
   ggplot(subset(sim_results, team == team_number), aes(x=result, y=sum_probs)) + 
     geom_bar(stat='identity', fill = 'darkslateblue', color='black') +
     scale_y_continuous(expand = c(0,0), limits=c(0,1), breaks=c(0, 0.25, 0.5, 0.75, 1), labels=c("0%", "25%", "50%", "75%", "100%")) +
+    geom_text(size=7, vjust=-1, label=percent(sim_results$sum_probs[sim_results$team == team_number]), color = 'darkred') +
     theme(panel.background = element_rect(fill = 'white', color='black'),
           panel.grid = element_blank(),
           axis.text.x = element_text(size=12, face='bold', color = 'black', vjust = 0.5, angle=315),
