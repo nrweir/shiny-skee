@@ -19,7 +19,7 @@ reactive_plot_names <- plot_names_df
 
 # Define UI ----
 ui <- fluidPage(
-  titlePanel("SkeeBoston Skeeson 19 Team Playoff Bracket"),
+  titlePanel("", windowTitle='SkeeBoston Skeeson 19 Stats'),
   fluidRow(
     column(12,
            img(src = 'skeeboston_banner.jpg', width='100%')
@@ -125,12 +125,12 @@ ui <- fluidPage(
            )
     ),
   column(10, 
-         h3('Skeeson 19 Playoff Bracket'),
+         h3('Skeeson 19 Playoff Bracket'), align='center',
          plotOutput('bracket', height='1000px')
   )),
   fluidRow(
     column(4),
-    column(4,
+    column(4, align='center',
            h3("Simulated team outcomes"),
            plotOutput('outcome_sim'),
            br(),
