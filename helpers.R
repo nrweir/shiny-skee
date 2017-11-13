@@ -108,28 +108,28 @@ plot_bracket <- function(plot_names_df, matchup_results){
     # geom_segment(aes(x=14, y=9, xend=14, yend=13)) +
     # geom_segment(aes(x=12, y=3, xend=12, yend=11)) +
     # geom_segment(aes(x=8, y=13, xend=12, yend=13)) +
-    annotate('text',label = paste0(plot_names_df$team_name[plot_names_df$round == 0 & plot_names_df$bracket_id == 16],': ',m_0.3_pcts[1]), x=1, y=6.75, size=5) + 
-    annotate('text', label = paste0(plot_names_df$team_name[plot_names_df$round == 0 & plot_names_df$bracket_id == 17],': ',m_0.3_pcts[2]), x=1, y=5.75, size=5) +
-    annotate('text', label = paste0(plot_names_df$team_name[plot_names_df$round == 0 & plot_names_df$bracket_id == 15],': ',m_0.2_pcts[1]), x=1, y=14.25, size=5) +
-    annotate('text', label = paste0(plot_names_df$team_name[plot_names_df$round == 0 & plot_names_df$bracket_id == 18],': ',m_0.2_pcts[2]), x=1, y=13.25, size=5) +
-    annotate('text', label = paste0(plot_names_df$team_name[plot_names_df$round == 0 & plot_names_df$bracket_id == 14],': ',m_0.1_pcts[1]), x=1, y=10.25, size=5) +
-    annotate('text', label = paste0(plot_names_df$team_name[plot_names_df$round == 0 & plot_names_df$bracket_id == 19],': ',m_0.1_pcts[2]), x=1, y=9.25, size=5) +
-    annotate('text', label = paste0(plot_names_df$team_name[plot_names_df$round == 1 & plot_names_df$bracket_id == 1],': ',m_1.1_pcts[1]), x=3, y=7.25, size=5) +
+    annotate('text',label = paste0('16. ', plot_names_df$team_name[plot_names_df$round == 0 & plot_names_df$bracket_id == 16],': ',m_0.3_pcts[1]), x=1, y=6.75, size=5) + 
+    annotate('text', label = paste0('17. ', plot_names_df$team_name[plot_names_df$round == 0 & plot_names_df$bracket_id == 17],': ',m_0.3_pcts[2]), x=1, y=5.75, size=5) +
+    annotate('text', label = paste0('15. ', plot_names_df$team_name[plot_names_df$round == 0 & plot_names_df$bracket_id == 15],': ',m_0.2_pcts[1]), x=1, y=14.25, size=5) +
+    annotate('text', label = paste0('18. ', plot_names_df$team_name[plot_names_df$round == 0 & plot_names_df$bracket_id == 18],': ',m_0.2_pcts[2]), x=1, y=13.25, size=5) +
+    annotate('text', label = paste0('14. ', plot_names_df$team_name[plot_names_df$round == 0 & plot_names_df$bracket_id == 14],': ',m_0.1_pcts[1]), x=1, y=10.25, size=5) +
+    annotate('text', label = paste0('19. ', plot_names_df$team_name[plot_names_df$round == 0 & plot_names_df$bracket_id == 19],': ',m_0.1_pcts[2]), x=1, y=9.25, size=5) +
+    annotate('text', label = paste0('1. ', plot_names_df$team_name[plot_names_df$round == 1 & plot_names_df$bracket_id == 1],': ',m_1.1_pcts[1]), x=3, y=7.25, size=5) +
     annotate('text', label = paste0(plot_names_df$team_name[plot_names_df$round == 1 & plot_names_df$bracket_id == 16],': ',m_1.1_pcts[2]), x=3, y=6.25, size=5) +
-    annotate('text', label = paste0(plot_names_df$team_name[plot_names_df$round == 1 & plot_names_df$bracket_id == 8],': ',m_1.8_pcts[1]), x=3, y=5.25, size=5) +
-    annotate('text', label = paste0(plot_names_df$team_name[plot_names_df$round == 1 & plot_names_df$bracket_id == 9],': ',m_1.8_pcts[2]), x=3, y=4.25, size=5) +
-    annotate('text', label = paste0(plot_names_df$team_name[plot_names_df$round == 1 & plot_names_df$bracket_id == 4],': ',m_1.4_pcts[1]), x=3, y=3.25, size=5) +
-    annotate('text', label = paste0(plot_names_df$team_name[plot_names_df$round == 1 & plot_names_df$bracket_id == 13],': ',m_1.4_pcts[2]), x=3, y=2.25, size=5) +
-    annotate('text', label = paste0(plot_names_df$team_name[plot_names_df$round == 1 & plot_names_df$bracket_id == 5],': ',m_1.5_pcts[1]), x=3, y=1.25, size=5) +
-    annotate('text', label = paste0(plot_names_df$team_name[plot_names_df$round == 1 & plot_names_df$bracket_id == 12],': ',m_1.5_pcts[2]), x=3, y=0.25, size=5) +
-    annotate('text', label = paste0(plot_names_df$team_name[plot_names_df$round == 1 & plot_names_df$bracket_id == 2],': ',m_1.2_pcts[1]), x=3, y=14.75, size=5) +
+    annotate('text', label = paste0('8. ', plot_names_df$team_name[plot_names_df$round == 1 & plot_names_df$bracket_id == 8],': ',m_1.8_pcts[1]), x=3, y=5.25, size=5) +
+    annotate('text', label = paste0('9. ', plot_names_df$team_name[plot_names_df$round == 1 & plot_names_df$bracket_id == 9],': ',m_1.8_pcts[2]), x=3, y=4.25, size=5) +
+    annotate('text', label = paste0('4. ', plot_names_df$team_name[plot_names_df$round == 1 & plot_names_df$bracket_id == 4],': ',m_1.4_pcts[1]), x=3, y=3.25, size=5) +
+    annotate('text', label = paste0('13. ', plot_names_df$team_name[plot_names_df$round == 1 & plot_names_df$bracket_id == 13],': ',m_1.4_pcts[2]), x=3, y=2.25, size=5) +
+    annotate('text', label = paste0('5. ', plot_names_df$team_name[plot_names_df$round == 1 & plot_names_df$bracket_id == 5],': ',m_1.5_pcts[1]), x=3, y=1.25, size=5) +
+    annotate('text', label = paste0('12. ', plot_names_df$team_name[plot_names_df$round == 1 & plot_names_df$bracket_id == 12],': ',m_1.5_pcts[2]), x=3, y=0.25, size=5) +
+    annotate('text', label = paste0('2. ', plot_names_df$team_name[plot_names_df$round == 1 & plot_names_df$bracket_id == 2],': ',m_1.2_pcts[1]), x=3, y=14.75, size=5) +
     annotate('text', label = paste0(plot_names_df$team_name[plot_names_df$round == 1 & plot_names_df$bracket_id == 15],': ',m_1.2_pcts[2]), x=3, y=13.75, size=5) +
-    annotate('text', label = paste0(plot_names_df$team_name[plot_names_df$round == 1 & plot_names_df$bracket_id == 7],': ',m_1.7_pcts[1]), x=3, y=12.75, size=5) +
-    annotate('text', label = paste0(plot_names_df$team_name[plot_names_df$round == 1 & plot_names_df$bracket_id == 10],': ',m_1.7_pcts[2]), x=3, y=11.75, size=5) +
-    annotate('text', label = paste0(plot_names_df$team_name[plot_names_df$round == 1 & plot_names_df$bracket_id == 3],': ',m_1.3_pcts[1]), x=3, y=10.75, size=5) +
+    annotate('text', label = paste0('7. ', plot_names_df$team_name[plot_names_df$round == 1 & plot_names_df$bracket_id == 7],': ',m_1.7_pcts[1]), x=3, y=12.75, size=5) +
+    annotate('text', label = paste0('10. ', plot_names_df$team_name[plot_names_df$round == 1 & plot_names_df$bracket_id == 10],': ',m_1.7_pcts[2]), x=3, y=11.75, size=5) +
+    annotate('text', label = paste0('3. ', plot_names_df$team_name[plot_names_df$round == 1 & plot_names_df$bracket_id == 3],': ',m_1.3_pcts[1]), x=3, y=10.75, size=5) +
     annotate('text', label = paste0(plot_names_df$team_name[plot_names_df$round == 1 & plot_names_df$bracket_id == 14],': ',m_1.3_pcts[2]), x=3, y=9.75, size=5) +
-    annotate('text', label = paste0(plot_names_df$team_name[plot_names_df$round == 1 & plot_names_df$bracket_id == 6],': ',m_1.6_pcts[1]), x=3, y=8.75, size=5) +
-    annotate('text', label = paste0(plot_names_df$team_name[plot_names_df$round == 1 & plot_names_df$bracket_id == 11],': ',m_1.6_pcts[2]), x=3, y=7.75, size=5) +
+    annotate('text', label = paste0('6. ', plot_names_df$team_name[plot_names_df$round == 1 & plot_names_df$bracket_id == 6],': ',m_1.6_pcts[1]), x=3, y=8.75, size=5) +
+    annotate('text', label = paste0('11. ', plot_names_df$team_name[plot_names_df$round == 1 & plot_names_df$bracket_id == 11],': ',m_1.6_pcts[2]), x=3, y=7.75, size=5) +
     annotate('text', label = paste0(plot_names_df$team_name[plot_names_df$round == 2 & plot_names_df$bracket_id == 1],': ',m_2.1_pcts[1]), x=5, y=6.75, size=5) +
     annotate('text', label = paste0(plot_names_df$team_name[plot_names_df$round == 2 & plot_names_df$bracket_id == 8],': ',m_2.1_pcts[2]), x=5, y=4.75, size=5) +
     annotate('text', label = paste0(plot_names_df$team_name[plot_names_df$round == 2 & plot_names_df$bracket_id == 4],': ',m_2.4_pcts[1]), x=5, y=2.75, size=5) +
